@@ -12,7 +12,7 @@ const FollowersColumn = (topFiveFollowing) => {
       </div>
       <div className="followers-section">
         <div className="following" />
-        <h2>Following</h2>
+        <h2>User Feed</h2>
       </div>
       <hr />
       <p>Your top accounts</p>

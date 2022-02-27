@@ -1,4 +1,4 @@
-const { createClient } = require("@astrajs/collections")
+const { createClient } = require("@astrajs/collections");
 
 const collection = "tktkposts"
 
@@ -6,8 +6,7 @@ exports.handler = async function (event, context, callback) {
   const astraClient = await createClient({
     astraDatabaseId: process.env.ASTRA_DB_ID,
     astraDatabaseRegion: process.env.ASTRA_DB_REGION,
-    username: process.env.ASTRA_DB_USERNAME,
-    password: process.env.ASTRA_DB_PASSWORD,
+    applicationToken: process.env.ASTRA_DB_APPLICATION_TOKEN,
   })
 
   const posts = astraClient
@@ -21,7 +20,7 @@ exports.handler = async function (event, context, callback) {
       username: "mofarooq32",
       avatar: "https://i.imgur.com/9KYq7VG.png",
       is_followed: true,
-      video: "https://i.imgur.com/FTBP02Y.mp4",
+      picture: "https://m.media-amazon.com/images/I/71BGukg04wL._AC_UX342_.jpg",
       caption: "These ducks are MEGA cute",
       likes: 10,
       comments: 2,
@@ -34,7 +33,7 @@ exports.handler = async function (event, context, callback) {
       username: "timmytam",
       avatar: "https://i.imgur.com/rWYtZa6.png",
       is_followed: false,
-      video: "https://i.imgur.com/1A7AKoF.mp4",
+      picture: "https://m.media-amazon.com/images/I/71BGukg04wL._AC_UX342_.jpg",
       caption: "When your fries give you attitude #getInMyBelly",
       likes: 12,
       comments: 2,
@@ -47,7 +46,7 @@ exports.handler = async function (event, context, callback) {
       username: "angiecakes",
       avatar: "https://i.imgur.com/eX3hkoc.png",
       is_followed: true,
-      video: "https://i.imgur.com/al6MLay.mp4",
+      picture: "https://m.media-amazon.com/images/I/71BGukg04wL._AC_UX342_.jpg",
       caption: "Happiest of Birthdays my Angel",
       likes: 2,
       comments: 4,
@@ -60,7 +59,7 @@ exports.handler = async function (event, context, callback) {
       username: "nina_lina",
       avatar: "https://i.imgur.com/IigY4Hm.png",
       is_followed: false,
-      video: "https://i.imgur.com/Kzvbeup.mp4",
+      picture: "https://m.media-amazon.com/images/I/71BGukg04wL._AC_UX342_.jpg",
       caption: "The new normal",
       likes: 10,
       comments: 2,
@@ -73,7 +72,7 @@ exports.handler = async function (event, context, callback) {
       username: "lana_del_away",
       avatar: "https://i.imgur.com/jONHmE5.png",
       is_followed: true,
-      video: "https://i.imgur.com/H9UX0Jm.mp4",
+      picture: "https://m.media-amazon.com/images/I/71BGukg04wL._AC_UX342_.jpg",
       caption: "Art is for everyone",
       likes: 231,
       comments: 20,
